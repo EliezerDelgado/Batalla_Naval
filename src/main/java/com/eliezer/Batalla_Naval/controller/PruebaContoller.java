@@ -12,6 +12,6 @@ public class PruebaContoller {
     }
     @GetMapping("/bye")
     public String bye(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return String.format("Bye bye %s! se yo tomorrow", name);
+        return String.format("Bye bye %s! see you tomorrow", name);
     }
 }
