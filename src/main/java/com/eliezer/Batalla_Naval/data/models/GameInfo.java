@@ -1,10 +1,10 @@
 package com.eliezer.Batalla_Naval.data.models;
 
-public class Game {
+public class GameInfo {
     private final int id;
     private Player player1;
     private Player player2;
-    public Game(int id)
+    public GameInfo(int id)
     {
         this.id = id;
     }
