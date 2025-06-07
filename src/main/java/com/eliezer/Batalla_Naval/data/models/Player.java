@@ -1,23 +1,24 @@
 package com.eliezer.Batalla_Naval.data.models;
 
+import java.awt.*;
+
 public class Player {
-    private final int id;
-    private String name;
-
-    public Player(int id)
+    private final PlayerInfo playerInfo;
+    private String color;
+    public Player(PlayerInfo playerInfo)
     {
-        this.id = id;
+        this.playerInfo = playerInfo;
     }
 
-    public int getId() {
-        return id;
+    public PlayerInfo getPlayerInfo() {
+        return playerInfo;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getColor() {
+        return color;
     }
 
-    public String getName() {
-        return name;
+    public void setColor(String color) {
+        this.color = color;
     }
 }
