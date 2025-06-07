@@ -5,10 +5,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
-import java.util.function.Consumer;
 
 @RestController
-public class PruebaContoller {
+public class JoinPlayerContoller {
     ArrayList<String> list = new ArrayList<>();
     int num = 1;
     @GetMapping("/player")
