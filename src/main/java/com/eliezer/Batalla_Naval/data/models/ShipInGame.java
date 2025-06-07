@@ -1,9 +1,13 @@
 package com.eliezer.Batalla_Naval.data.models;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class ShipInGame {
     private final ShipInfo shipInfo;
-    private Position position0;
-    private Position position1;
+    private final ArrayList<Position> positions = new ArrayList<>();
+    private String status;
+
     public ShipInGame(ShipInfo shipInfo)
     {
         this.shipInfo = shipInfo;
@@ -13,19 +17,7 @@ public class ShipInGame {
         return shipInfo;
     }
 
-    public void setPosition0(Position position0) {
-        this.position0 = position0;
-    }
-
-    public void setPosition1(Position position1) {
-        this.position1 = position1;
-    }
-
-    public Position getPosition0() {
-        return position0;
-    }
-
-    public Position getPosition1() {
-        return position1;
+    public ArrayList<Position> getPositions() {
+        return positions;
     }
 }
