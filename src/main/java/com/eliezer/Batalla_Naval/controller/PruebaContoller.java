@@ -14,6 +14,7 @@ public class PruebaContoller {
     @GetMapping("/player")
     public String player(@RequestParam(value = "name", defaultValue = "player "+1) String name) {
         list.add(name);
+        num++;
         return String.format("Hello %s!", name);
     }
 
